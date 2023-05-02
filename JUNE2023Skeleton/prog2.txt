@@ -1,0 +1,11 @@
+       LDA# 3       * test negative
+       SUB  NUM1      
+       SKP     
+       STA  FINAL 
+       HLT 
+
+
+
+
+ NUM1:      5 
+FINAL:      0

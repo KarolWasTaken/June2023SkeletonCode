@@ -1,0 +1,17 @@
+ SUB1: ADD  NUM1    * test subroutines
+       JSR  SUB2
+       RTN  
+ SUB2: ADD  NUM1
+       JSR  SUB3  
+       RTN  
+ SUB3: ADD  NUM1
+       JSR  SUB4 
+       RTN  
+ SUB4: ADD  NUM1
+       RTN  
+START: LDA  NUM1
+       JSR  SUB1
+       STA  NUM2 
+       HLT
+ NUM1:      7
+ NUM2:      0
